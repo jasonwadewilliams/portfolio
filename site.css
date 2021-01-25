@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(44, 44, 44);
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #19d898;
+    background-color: rgb(44, 44, 44);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #19d898;
+    color: rgb(44, 44, 44);
+  }
+
+  /*======================================================================*/
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(44, 44, 44);
+  }
+
+  .middleBlock {
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 20px;
+    list-style-type: none;
+    background-color: #111;
+    color: rgb(114, 114, 114);
+    padding-bottom: 800px;
+  }
+
+  .middleBlock ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    float: left;
+    width: 100%;
+    color: rgb(114, 114, 114);
+    
+  }
+  
+  .middleBlock h2 {
+    color: #19d898;
+  }
+
+  a {
+    color: #19d898;
+    text-decoration: none;
+  }
+  
+  .spacer {
+    padding: 30px;
+  }
