@@ -9,49 +9,66 @@
 
     <body>
         <Menu class="topnav">
-            <div><strong><a href='index.html'>Home</a></strong></div>
-            <div><strong><a href='demoReel.html'>Demo Reel</a></strong></div>
-            <div><strong><a href='myWork.html'>My Work</a></strong></div>
+            <div class="home"><a href='index.html'><strong>Home</strong></a></div>
+            <ul class="links">
+                <li><a href='demoReel.html'><strong>Demo Reel</strong></a></li>
+                <li class="dropdown"><span><strong>My Work ▾</strong></span>
+                    <ul class="dropdown-menu">
+                        <li><a href='myWork.html'>FX</a></li>
+                        <li><a href='myWork.html'>Environments</a></li>
+                        <li><a href='myWork.html'>Shading</a></li>
+                        <li><a href='myWork.html'>Procedural</a></li>
+                    </ul>
+                </li>
+            </ul>
         </Menu>
         <div class="spacer"></div>
 
         <div class="middleBlock">
-            <h1>Jason Williams</h1>
-            <h2>About:</h2>
-            <p>Hi, my name is Jason Williams.  I am a Junior at Brigham Young University studying Computer Science with and emphasis
-                in Animation.  
-            </p>
-            </hr>    
-            <h2>Projects:</h2>
-            <ul>
-                <li><p><strong>BYU</strong> Broadcasting - <em>Studio C</em> tv production</p></li>
-                <li><p>Proffie Board Lightsaber fx programming</p></li>
-                <li><p><strong>BYU</strong> Animation student film Salt, Stowaway, and Cenote</p></li>
-            </ul>    
-            <hr>    
-            <h2>Experience:</h2>
-            <ol>
-                <li><h3>BYUtv</h3><p>Visual Effects Artist</p><p><em>January 2020 - Present</em></p></li>
-                <li><h3>BYUradio</h3><p>Web Developer</p><p><em>October 2018 - December 2019</em></p></li>
-                <li><h3>Forest Highlands</h3><p>cook</p><p><em>May2015 - July 2016</em></p></li>
-            </ol>    
-            <hr>    
-            <h2>Contact:</h2>
-            <ul>
-                <li><p>Email: jasonwadewilliams1@gmail.com</p></li>
-                <li><p>Phone: (435)-772-5609</p></li>
-                <li><p>LinkedIN: <a href="https://www.linkedin.com/in/jason-williams-946a8617a/" target="blank">Jason Williams</a></p></li>
-                <li><p>Gethub: <a href="https://github.com/jasonwadewilliams" target="blank">https://github.com/jasonwadewilliams</a></p></li>
-            </ul>
+            <div class="name"><h1>Jason Williams</h1></div>
+            <div class="spacer"></div>
+            <div class="aboutme">
+                <h2>About Me:</h2>
+                <p>Hi, my name is Jason Williams.  I am a Junior at Brigham Young University studying Computer Science with and emphasis
+                    in Animation.  
+                </p>
+            </div>
 
+            <div class="spacer"></div>
+  
+            <div class="info">
+                <div class="experience">   
+                    <h2>Experience:</h2>
+                    <ul>
+                        <li><h3>BYUtv</h3><p>Visual Effects Artist</p><p><em>January 2020 - Present</em></p></li>
+                        <li><h3>BYUradio</h3><p>Web Developer</p><p><em>October 2018 - December 2019</em></p></li>
+                        <li><h3>Forest Highlands</h3><p>cook</p><p><em>May2015 - July 2016</em></p></li>
+                    </ul> 
+                </div> 
+                <div class="projects">
+                    <h2>Projects:</h2>
+                    <ul>
+                        <li><p><strong>BYU</strong> Broadcasting - <em>Studio C</em> tv production</p></li>
+                        <li><p>Proffie Board Lightsaber fx programming</p></li>
+                        <li><p><strong>BYU</strong> Animation student film Salt, Stowaway, and Cenote</p></li>
+                    </ul> 
+                </div>   
+            </div> 
+        </div>
+        
+        <div class="spacer"></div>
+
+        <div class="footer">
+            <div class="contact">    
+                <h2>Contact:</h2>
+                <ul>
+                    <li><p>Email: jasonwadewilliams1@gmail.com</p></li>
+                    <li><p>Phone: (435)-772-5609</p></li>
+                    <li><p>LinkedIN: <a href="https://www.linkedin.com/in/jason-williams-946a8617a/" target="blank">Jason Williams</a></p></li>
+                    <li><p>Gethub: <a href="https://github.com/jasonwadewilliams" target="blank">https://github.com/jasonwadewilliams</a></p></li>
+                </ul>
+            </div>
         </div>
     </body>
 
 </html>
-
-<script src="jquery.js"></script> 
-    <script> 
-    $(function(){
-      $("#DivContent").load("footer.html"); 
-    });
-</script>

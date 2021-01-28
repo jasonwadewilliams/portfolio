@@ -13,27 +13,85 @@
   
   /* Style the top navigation bar */
   .topnav {
-    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
+    padding: 14px 16px;
     position: fixed;
-    background-color: rgb(44, 44, 44);
+    background-color: rgb(20, 20, 20);
+  }
+
+  .links {
+    display: flex;
+    justify-content: flex-end;
   }
   
   /* Style the topnav links */
-  .topnav a {
-    float: left;
-    display: block;
+  .topnav strong {
     color: #19d898;
-    background-color: rgb(44, 44, 44);
+    background-color: rgb(20, 20, 20);
     text-align: center;
-    padding: 14px 16px;
+    
+  }
+  
+  .topnav a {
     text-decoration: none;
+  }
+
+  .topnav strong {
+    color: #19d898;
+    border-radius: 5px;
+    padding: 14px 30px;
   }
   
   /* Change color on hover */
-  .topnav a:hover {
+  .topnav strong:hover {
     background-color: #19d898;
-    color: rgb(44, 44, 44);
+    color: rgb(20, 20, 20);
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown > span {
+    z-index: 2;
+    position: relative;  /* This is important! */
+    cursor: pointer;
+  }
+
+  .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    background: #19d898;
+    color: rgb(20, 20, 20);
+    border-radius: 5px;
+    padding-top: 60px;
+    position: absolute;
+    top: -25px;
+    left: -30px;
+    z-index: 1;
+  }
+
+  .dropdown-menu li {
+    list-style: none;
+    border-bottom: 1px solid rgb(20, 20, 20);
+    padding: 0 40px 10px 20px;
+    margin: 10px;
+    text-emphasis: bold;
+  }
+
+  .dropdown-menu a:hover {
+    background-color: rgb(20, 20, 20);
+    color: #19d898;
+  }
+
+  .dropdown-menu li:last-of-type {
+    border-bottom: none;
   }
 
   /*======================================================================*/
@@ -43,31 +101,7 @@
     background-color: rgb(44, 44, 44);
   }
 
-  .middleBlock {
-    margin-left: 80px;
-    margin-right: 80px;
-    padding: 20px;
-    list-style-type: none;
-    background-color: #111;
-    color: rgb(114, 114, 114);
-    padding-bottom: 800px;
-  }
-
-  .middleBlock ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    float: left;
-    width: 100%;
-    color: rgb(114, 114, 114);
-    
-  }
-  
-  .middleBlock h2 {
-    color: #19d898;
-  }
-
-  a {
+  .footer a {
     color: #19d898;
     text-decoration: none;
   }
@@ -75,3 +109,73 @@
   .spacer {
     padding: 30px;
   }
+
+  .middleBlock {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 20px;
+    background-color: #111;
+    color: rgb(114, 114, 114);
+    /*padding-bottom: 800px;*/
+  }
+
+  .middleBlock ul {
+    padding: 0px 20px;
+    margin: 0;
+    list-style-type: none;
+    width: 100%;
+    color: rgb(114, 114, 114);
+    margin-bottom: 1000px;
+  }
+
+  .middleBlock p {
+    padding: 0px 20px;
+  }
+  
+  .middleBlock h2 {
+    color: #19d898;
+  }
+
+  .aboutme {
+    display: flex;
+    align-items: center;
+  }
+
+  .name {
+    display: flex;
+    justify-content: center;
+  } 
+  
+  .info {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    bottom: 20px;
+    background-color: rgb(20, 20, 20);
+    color: rgb(114, 114, 114);
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  /* my work page */
+
+  .images {
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+
+  

@@ -7,16 +7,30 @@
 
     <body>
         <Menu class="topnav">
-            <div><strong><a href='index.html'>Home</a></strong></div>
-            <div><strong><a href='demoReel.html'>Demo Reel</a></strong></div>
-            <div><strong><a href='myWork.html'>My Work</a></strong></div>
+            <div class="home"><a href='index.html'><strong>Home</strong></a></div>
+            <ul class="links">
+                <li><a href='demoReel.html'><strong>Demo Reel</strong></a></li>
+                <li class="dropdown"><span><strong>My Work ▾</strong></span>
+                    <ul class="dropdown-menu">
+                        <li><a href='myWork.html'>FX</a></li>
+                        <li><a href='myWork.html'>Environments</a></li>
+                        <li><a href='myWork.html'>Shading</a></li>
+                        <li><a href='myWork.html'>Procedural</a></li>
+                    </ul>
+                </li>
+            </ul>
         </Menu>
         <div class="spacer"></div>
+        
+        
         <ol>
-            <li><img src="images/forest.png" style="width:600px;"></li>
-            <li><img src="images/tree.png" style="width:600px;"></li>
-            <li><img src="images/lantern.png" style="width:600px;"></li>
+            <div class="images"></div>
+                <li><img src="images/forest.png" style="width:600px;"></li>
+                <li><img src="images/tree.png" style="width:600px;"></li>
+                <li><img src="images/lantern.png" style="width:600px;"></li>
+            </div>
         </ol>
+        
     </body>
 
 </html>

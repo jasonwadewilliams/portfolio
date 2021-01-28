@@ -7,11 +7,21 @@
 
     <body>
         <Menu class="topnav">
-            <div><strong><a href='index.html'>Home</a></strong></div>
-            <div><strong><a href='demoReel.html'>Demo Reel</a></strong></div>
-            <div><strong><a href='myWork.html'>My Work</a></strong></div>
+            <div class="home"><a href='index.html'><strong>Home</strong></a></div>
+            <ul class="links">
+                <li><a href='demoReel.html'><strong>Demo Reel</strong></a></li>
+                <li class="dropdown"><span><strong>My Work ▾</strong></span>
+                    <ul class="dropdown-menu">
+                        <li><a href='myWork.html'>FX</a></li>
+                        <li><a href='myWork.html'>Environments</a></li>
+                        <li><a href='myWork.html'>Shading</a></li>
+                        <li><a href='myWork.html'>Procedural</a></li>
+                    </ul>
+                </li>
+            </ul>
         </Menu>
         <div class="spacer"></div>
+        
         <iframe src="https://player.vimeo.com/video/389160990" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         <p><em>Link to my demo reel:</em><a href="https://vimeo.com/manage/389160990/general" target="blank" rel="noreferrer noopener">Here</a></p>
     </body>
